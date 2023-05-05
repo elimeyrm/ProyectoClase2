@@ -1,0 +1,4 @@
+D:\PROYECTO WEB\HolaMundo\HolaMundo\bin\Debug\HolaMundo.exe
+D:\PROYECTO WEB\HolaMundo\HolaMundo\bin\Debug\HolaMundo.pdb
+D:\PROYECTO WEB\HolaMundo\HolaMundo\obj\x86\Debug\HolaMundo.exe
+D:\PROYECTO WEB\HolaMundo\HolaMundo\obj\x86\Debug\HolaMundo.pdb
