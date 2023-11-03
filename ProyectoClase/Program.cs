@@ -12,7 +12,7 @@ namespace HolaMundo
             Console.ForegroundColor = ConsoleColor.Black;
             Console.BackgroundColor = ConsoleColor.White;
             Console.Clear();
-            Console.Title = "Uso de un procedimiento";
+            Console.Title = "Uso de un procedimiento en c#";
             int num;
             Console.WriteLine("Digitar un numero entero positivo:");
             num = int.Parse(Console.ReadLine());
