@@ -1,0 +1,481 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int[] array={7,4,3,10,9,4,3,2,1,2};
+		mostrarTodos(array);
+		Console.WriteLine("");
+		mostrarPares(array);
+	}
+	public static void mostrarTodos(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPares(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(array[i]%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	   }
+	}
+}
+---------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int[] array={7,4,3,10,9,3,2,1,2};
+		mostrarTodos(array);
+		Console.WriteLine("");
+		mostrarPares(array);
+		Console.WriteLine("");
+        mostrarPocisiones(array);
+	}
+	public static void mostrarTodos(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPares(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(array[i]%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPocisiones(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(i%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+}
+----------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int[] array={7,4,3,10,9,3,2,1,2};
+		mostrarTodos(array);
+		Console.WriteLine("");
+		mostrarPares(array);
+		Console.WriteLine("");
+        mostrarPocisiones(array);
+		Console.WriteLine("");
+		Console.WriteLine(elementosImpares(array));
+        elementosImpares(array);
+	}
+	public static void mostrarTodos(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPares(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(array[i]%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPocisiones(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(i%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+	public static int elementosImpares(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {   int c=0; 
+			 for(int i=0; i<array.Length;i++)
+	          {
+		         if(array[i]%2!=0)
+				 {
+		      c++;
+	             }
+	          }
+		  return(c);
+	      }
+		return(0);
+	   }
+	
+}
+-----------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int[] array={7,4,3,10,9,3,2,1,2};
+		mostrarTodos(array);
+		//Console.WriteLine((array));
+		//Console.WriteLine("");
+		//mostrarPares(array);
+		//Console.WriteLine("");
+       // mostrarPocisiones(array);
+		//Console.WriteLine("");
+		//Console.WriteLine("");
+		//Console.WriteLine(elementosImpares(array));
+        //elementosImpares(array);
+		//Console.WriteLine(array);
+		Console.WriteLine("");
+			Console.WriteLine("");	Console.WriteLine("");
+		inverso(array);
+	}
+	public static void mostrarTodos(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPares(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(array[i]%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPocisiones(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(i%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+	public static int elementosImpares(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {   //int c=0; 
+		     int suma=0;
+			 for(int i=0; i<array.Length;i++)
+	          {
+		         if(i%2!=0)
+				 {
+					 
+		    suma=suma+array[i];
+	             }
+	          }
+		  return(suma);
+	      }
+		return(0);
+	   }
+	public static void inverso(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {     for (int i = array.Length - 1; i >= 0; i--)
+	          {
+		   		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+	
+}
+----------------------------------
+using System;
+
+public class Program
+{
+    public static void Cargar(int[,] mat)
+    {
+        for (int f = 0; f < mat.GetLength(0); f++)
+        {
+            for (int c = 0; c < mat.GetLength(1); c++)
+            {
+                Console.Write("Ingrese componente [" + f + "," + c + "]: ");
+                string linea = Console.ReadLine();
+                mat[f, c] = int.Parse(linea);
+            }
+        }
+    }
+
+    public static void Imprimir(int[,] mat)
+    {
+        for (int f = 0; f < mat.GetLength(0); f++)
+        {
+            for (int c = 0; c < mat.GetLength(1); c++)
+            {
+                Console.Write(mat[f, c] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        Console.Write("Ingrese el número de filas: ");
+        int filas = int.Parse(Console.ReadLine());
+        Console.Write("Ingrese el número de columnas: ");
+        int columnas = int.Parse(Console.ReadLine());
+        
+        int[,] mat = new int[filas, columnas];
+        Cargar(mat);
+        Imprimir(mat);
+    }
+}
+-------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int[] array={7,4,3,10,9,3,2,1,2};
+		mostrarTodos(array);
+		//Console.WriteLine((array));
+		//Console.WriteLine("");
+		//mostrarPares(array);
+		//Console.WriteLine("");
+       // mostrarPocisiones(array);
+		//Console.WriteLine("");
+		//Console.WriteLine("");
+		//Console.WriteLine(elementosImpares(array));
+        //elementosImpares(array);
+		//Console.WriteLine(array);
+		Console.WriteLine("");
+			Console.WriteLine("");	Console.WriteLine("");
+		inverso(array);
+	}
+	public static void mostrarTodos(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPares(int[] array)
+	{
+	   if(array!=null && array.Length>0)
+	   {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(array[i]%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	   }
+	}
+	public static void mostrarPocisiones(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {    for(int i=0; i<array.Length;i++)
+	          {
+		   if(i%2==0)
+		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+	public static int elementosImpares(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {   //int c=0; 
+		     int suma=0;
+			 for(int i=0; i<array.Length;i++)
+	          {
+		         if(i%2!=0)
+				 {
+					 
+		    suma=suma+array[i];
+	             }
+	          }
+		  return(suma);
+	      }
+		return(0);
+	   }
+	public static void inverso(int[] array)
+	   {
+	     if(array!=null && array.Length>0)
+	     {     for (int i = array.Length - 1; i >= 0; i--)
+	          {
+		   		   Console.Write(""+array[i]);
+	           }
+	      }
+	    }
+	
+}
+---------------------------------------------
+using System;
+					
+public class Program
+{
+
+public static void Cargar (int[,] mat)
+{
+
+for (int f = 0; f < 3;f++)
+for (int c = 0; c < 5;c++)
+{
+{
+Console.Write("Ingrese componente:");
+mat[f, c] =  Convert.ToInt32(Console.ReadLine());
+}
+}
+}
+public static void Imprimir ( int[,] mat)
+{
+for (int f = 0; f < 3; f++)
+{
+for (int c = 0; c < 5; c++)
+{
+Console.Write (mat [f, c]+" ");
+}
+	Console.WriteLine();
+}
+	
+}
+
+
+public static void Main(string[] args)
+{
+ 	int [,] mat;
+	mat=new int[3,5];
+	Cargar(mat);
+    Imprimir(mat);
+}
+	}
+-----------------------------------------
+using System;
+					
+public class Program
+{
+
+public static void Generar (char[,] mat)
+{
+
+  for (int f = 0; f < 4;f++)
+  {
+
+	for (int c = 0; c < 4;c++)
+    {
+	   if (f==c)
+	   {
+		mat[f,c]='*';
+	   }
+	   else
+	   {
+	mat[f,c]='-';
+	   }
+	}
+//Console.Write("Ingrese componente:");
+//mat[f, c] =  Convert.ToInt32(Console.ReadLine());
+  }
+}
+public static void Imprimir ( char[,] mat)
+{
+      for (int f = 0; f < 4; f++)
+      {
+              for (int c = 0; c < 4; c++)
+                {
+                     Console.Write (mat [f, c]+" ");
+                 }
+	Console.WriteLine();
+       }
+	
+}
+
+
+public static void Main(string[] args)
+{
+ 	char [,] mat;
+	mat=new char[4,4];
+    Generar(mat);
+    Imprimir(mat);
+}
+	}
+--------------------------------------------------------------
+using System;
+					
+public class Program
+{
+
+public static void Generar (string[,] mat)
+{
+
+  for (int f = 0; f < 4;f++)
+  {
+
+	for (int c = 0; c < 4;c++)
+    {
+	   if (f==c)
+	   {
+		mat[f,c]="WENDY";
+	   }
+	   else
+	   {
+	mat[f,c]="RODRIGO";
+	   }
+	}
+//Console.Write("Ingrese componente:");
+//mat[f, c] =  Convert.ToInt32(Console.ReadLine());
+  }
+}
+public static void Imprimir ( string[,] mat)
+{
+      for (int f = 0; f < 4; f++)
+      {
+              for (int c = 0; c < 4; c++)
+                {
+                     Console.Write (mat [f, c]+" ");
+                 }
+	Console.WriteLine();
+       }
+	
+}
+
+
+public static void Main(string[] args)
+{
+ 	string [,] mat;
+	mat=new string[4,4];
+    Generar(mat);
+    Imprimir(mat);
+}
+	}
+11111111
+00000010
+00000100
+00001000
+00010000
+00100000
+01000000
+11111111
